@@ -1,5 +1,9 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; }
+* {
+     box-sizing: border-box; margin: 0; padding: 0; 
+    }
+body {
+     font-family: Arial, sans-serif; 
+    }
 /* <---------------FIRST-PART---------------> */
 .main{
     background-image: url(hero-bg.jpg);
@@ -76,11 +80,11 @@ body { font-family: Arial, sans-serif; }
 }
 /* -------main-content------------- */
 .main-content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
 }
 .content-box{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 100%;
     width: 55%;
     display: flex;
@@ -89,7 +93,7 @@ body { font-family: Arial, sans-serif; }
 }
 .box-text{
     height: 95%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
 }
 .topic{
@@ -105,4 +109,13 @@ body { font-family: Arial, sans-serif; }
     height: 100vh;
     /* width: 100vw; */
     /* border: 2px solid red; */
+}
+/* <-----------------------------------------------third-part--------------> */
+.third-part{
+    height: 100vh;
+    /* border: 1px solid red; */
+    background-image: url(about-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
 }
