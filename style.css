@@ -40,7 +40,7 @@ body {
   /* border: 1px solid black; */
   justify-content: center; /* Centers links horizontally */
   align-items: center; /* Ensures links are vertically aligned */
-  gap: 1.5rem; /* Adds spacing between links */
+  gap: 1.0rem; /* Adds spacing between links */
   padding: 0; /* Removes default padding */
   margin: 0; 
 }
@@ -154,8 +154,21 @@ body {
 .second-main{
     height: 100vh;
     /* width: 100vw; */
-    /* border: 2px solid red; */
+    border: 2px solid red;
+    display: flex;
+    padding: 50px;
 }
+/* <--------------second-content-----------> */
+.second-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.box1{
+  height: 30%;
+  
+}
+
 /* <-----------------------------------------------third-part--------------> */
 .third-part{
     height: 100vh;
