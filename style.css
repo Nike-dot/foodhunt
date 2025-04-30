@@ -168,6 +168,13 @@ body {
   height: 30%;
   
 }
+.img{
+  border-radius: 50% ;
+  border: 3px solid yellow;
+}
+.card p {
+  font-family: 'Dancing Script', cursive;
+}
 
 /* <-----------------------------------------------third-part--------------> */
 .third-part{
