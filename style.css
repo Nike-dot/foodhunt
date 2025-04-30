@@ -10,7 +10,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .navbar {
   display: flex;
@@ -83,25 +85,69 @@ body {
     /* border: 1px solid red; */
     height: 100%;
 }
-.content-box{
-    /* border: 1px solid green; */
-    height: 100%;
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+/* <--------------content-box-------------> */
+/* Fix .content-box responsiveness */
+.content-box {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2rem; /* Avoid content sticking to the bottom */
 }
-.box-text{
-    height: 95%;
-    /* border: 1px solid blue; */
 
+/* Responsive override for small screens */
+@media (max-width: 768px) {
+  .content-box {
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      text-align: center;
+  }
+
+  .box-text {
+      height: auto;
+  }
+
+  .box-text .btn {
+      width: 80%;
+  }
 }
+
+/* <-----------box-text-----------> */
+.box-text {
+  height: 95%;
+}
+
 .topic{
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
 }
 .c1{
         font-family: 'Open Sans', sans-serif;   
+        font-size: clamp(1rem, 2.5vw, 1.3rem); /* responsive size */
+        line-height: 1.6;
+}
+
+/* Responsive button */
+.box-text .btn {
+  width: clamp(120px, 30%, 200px);
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+}
+
+/* Optional: Better spacing on smaller screens */
+@media (max-width: 576px) {
+  .box-text {
+      text-align: center;
+      padding: 1rem 0.5rem;
+  }
+  .box-text .btn {
+      width: 60%;
+      margin: 0 auto;
+  }
 }
 /* <!---------------------------------- second-part--------------------------> */
 
@@ -118,4 +164,5 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
+    background-color:rgb(33, 37, 41) ;
 }
