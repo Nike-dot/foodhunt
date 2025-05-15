@@ -178,12 +178,121 @@ body {
 }
 
 /* <-----------------------------------------------third-part--------------> */
-.third-part{
-    height: 100vh;
-    /* border: 1px solid red; */
-    background-image: url(about-img.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-color:rgb(33, 37, 41) ;
+.third-part {
+  height: 100vh;
+  background-image: url(about-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: rgb(33, 37, 41);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem; /* Add padding for spacing */
+}
+
+.third-part-content {
+  height: auto;
+  width: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: justify;
+  gap: 1rem; /* Add spacing between elements */
+}
+
+.third-part-content p.h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+  font-weight: bold;
+}
+
+.third-part-content p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .third-part {
+      flex-direction: column; /* Stack content vertically */
+      background-position: top; /* Adjust background position */
+      padding: 1rem; /* Reduce padding */
+  }
+
+  .third-part-content {
+      width: 100%; /* Full width for smaller screens */
+      align-items: center; /* Center align content */
+      text-align: center; /* Center align text */
+  }
+
+  .third-part-content p.h1 {
+      font-size: 2rem; /* Adjust heading size */
+  }
+
+  .third-part-content p {
+      font-size: 1rem; /* Adjust paragraph size */
+  }
+}
+
+@media (max-width: 480px) {
+  .third-part {
+      padding: 0.5rem; /* Further reduce padding */
+  }
+
+  .third-part-content p.h1 {
+      font-size: 1.8rem; /* Further adjust heading size */
+  }
+
+  .third-part-content p {
+      font-size: 0.9rem; /* Further adjust paragraph size */
+  }
+}
+/* -----------------button */
+/* From Uiverse.io by cssbuttons-io */ 
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
 }
