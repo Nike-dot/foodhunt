@@ -154,7 +154,7 @@ body {
 .second-main{
     height: 100vh;
     /* width: 100vw; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     padding: 50px;
 }
@@ -163,10 +163,11 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  /* border: 1px solid red; */
 }
 .box1{
   height: 30%;
-  
+  /* border: 1px solid red; */
 }
 .img{
   border-radius: 50% ;
