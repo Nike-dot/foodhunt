@@ -5,7 +5,7 @@
 body {
      font-family: Arial, sans-serif; 
     }
-/* <---------------FIRST-PART---------------> */
+/* <----------------------------------------------FIRST-PART-------------------------> */
 .main{
     background-image: url(hero-bg.jpg);
     background-size: cover;
@@ -150,6 +150,7 @@ body {
       margin: 0 auto;
   }
 }
+/* <--------------------------------------------heading of second part-------------------> */
 .sec{
   text-align: center;
   font-weight: 900;
@@ -157,7 +158,7 @@ body {
   margin-top: 10px;
   font-family:		Clean, modern sans-serif;
 }
-/* <!---------------------------------- second-part--------------------------> */
+/* <!--------------------------------------- second-part--------------------------------> */
 .second-part {
   display: flex;
   flex-wrap: wrap;
@@ -188,7 +189,7 @@ body {
   /* border: 1px solid red; */
 }
 
-/* <-----------------------------------------------third-part--------------> */
+/* <-----------------------------------------------third-part-------------------------------------> */
 .third-part {
   height: 100vh;
   background-image: url(about-img.png);
@@ -260,7 +261,7 @@ body {
       font-size: 0.9rem; /* Further adjust paragraph size */
   }
 }
-/* -----------------button */
+/* -----------------------------------------------------button -------------------------------*/
 /* From Uiverse.io by cssbuttons-io */ 
 button {
   align-items: center;
@@ -309,7 +310,7 @@ button:active {
 }
 
 
-/*------------------- fourth-part----------------------------- */
+/*------------------------------------------ fourth-part------------------------------------ */
 .fourth-part{
   min-height: 100vh;
   font-family: 'Dancing Script', cursive;
@@ -430,7 +431,7 @@ button:active {
     grid-row: auto;
   }
 }
-/* ------------------------fifth-part---------------------- */
+/* -----------------------------------------------------fifth-part------------------------------------------ */
 .fifth-part{
   min-height: 100vh;
   /* border: 1px solid red; */
@@ -465,7 +466,7 @@ button:active {
       height: 194px;
   }
 }
-/* -----------------------------------fifth-part----------------- */
+/* -------------------------------------------------------fifth-part----------------------------- */
 .fifth-part-content{
   display: flex;
   flex-direction: column;
