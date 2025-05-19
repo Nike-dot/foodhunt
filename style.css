@@ -431,6 +431,20 @@ button:active {
     grid-row: auto;
   }
 }
+
+/* Adjust grid layout for desktop screens */
+@media (min-width: 992px) {
+  .parent {
+    grid-template-columns: repeat(4, 1fr); /* Change to 4 columns */
+    grid-template-rows: auto; /* Let rows adjust automatically */
+    gap: 1rem; /* Add spacing between grid items */
+  }
+
+  .parent > div {
+    grid-column: auto; /* Reset column span */
+    grid-row: auto; /* Reset row span */
+  }
+}
 /* -----------------------------------------------------fifth-part------------------------------------------ */
 .fifth-part{
   min-height: 100vh;
