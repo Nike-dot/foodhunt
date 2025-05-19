@@ -150,6 +150,13 @@ body {
       margin: 0 auto;
   }
 }
+.sec{
+  text-align: center;
+  font-weight: 900;
+  font-size: 27px;
+  margin-top: 10px;
+  font-family:		Clean, modern sans-serif;
+}
 /* <!---------------------------------- second-part--------------------------> */
 .second-part {
   display: flex;
