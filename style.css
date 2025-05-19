@@ -458,3 +458,27 @@ button:active {
       height: 194px;
   }
 }
+/* -----------------------------------fifth-part----------------- */
+.fifth-part-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fifth-part pa{
+  /* border: 1px solid red; */
+  font-weight: 900;
+  font-family: 'Dancing Script', cursive;
+}
+.fifth-part p1{
+  font-family: 'Dancing Script', cursive;
+  font-size: large;
+  font-weight:500;
+  /* text-align: justify; */
+  /* border: 1px solid red; */
+}
+.fifth-part p2{
+  /* text-align: center; */
+  /* border: 1px solid red; */
+font-size: large;
+}
