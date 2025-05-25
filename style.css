@@ -504,3 +504,23 @@ button:active {
   /* border: 1px solid red; */
 font-size: large;
 }
+/* Decrease and make responsive the image in fifth-part-content-p8 */
+.fifth-part-content p img {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .fifth-part-content p img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fifth-part-content p img {
+    width: 60px;
+    height: 60px;
+  }
+}
