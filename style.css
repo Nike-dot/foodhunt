@@ -291,7 +291,7 @@ body {
 }
 /* <-----------------------------------------------third-part-------------------------------------> */
 .third-part {
-  height: 100vh;
+  height: 70vh;
   background-image: url(about-img.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -328,39 +328,54 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .third-part {
-      flex-direction: column; /* Stack content vertically */
-      background-position: top; /* Adjust background position */
-      padding: 1rem; /* Reduce padding */
+    flex-direction: column; /* Stack content vertically */
+    background-position: top; /* Adjust background position */
+    padding: 1rem; /* Reduce padding */
+
+    /* ✅ Center text content on mobile */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .third-part-content {
-      width: 100%; /* Full width for smaller screens */
-      align-items: center; /* Center align content */
-      text-align: center; /* Center align text */
+    width: 100%; /* Full width for smaller screens */
+    align-items: center; /* Center align content */
+    text-align: center; /* Center align text */
   }
 
   .third-part-content p.h1 {
-      font-size: 2rem; /* Adjust heading size */
+    font-size: 2rem; /* Adjust heading size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 
   .third-part-content p {
-      font-size: 1rem; /* Adjust paragraph size */
+    font-size: 1rem; /* Adjust paragraph size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 }
 
 @media (max-width: 480px) {
   .third-part {
-      padding: 0.5rem; /* Further reduce padding */
+    padding: 0.5rem; /* Further reduce padding */
+
+    /* ✅ Keep text centered on very small screens */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .third-part-content p.h1 {
-      font-size: 1.8rem; /* Further adjust heading size */
+    font-size: 3rem; /* Further adjust heading size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 
   .third-part-content p {
-      font-size: 0.9rem; /* Further adjust paragraph size */
+    font-size: 0.9rem; /* Further adjust paragraph size */
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   }
 }
+
 /* -----------------------------------------------------button -------------------------------*/
 /* From Uiverse.io by cssbuttons-io */ 
 button {
@@ -408,7 +423,6 @@ button:hover span {
 button:active {
   transform: scale(0.9);
 }
-
 
 /*------------------------------------------ fourth-part------------------------------------ */
 .fourth-part{
