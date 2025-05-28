@@ -433,6 +433,10 @@ button:active {
   /* background-color: #e964d3; */
   color: black;
 }
+.fourth-part h1{
+  font-size: 60px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -604,19 +608,36 @@ button:active {
 .fifth-part pa{
   /* border: 1px solid red; */
   font-weight: 900;
-  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  /* font-family: 'Dancing Script', cursive; */
 }
 .fifth-part p1{
-  font-family: 'Dancing Script', cursive;
-  font-size: large;
+  /* font-family: 'Dancing Script', cursive; */
+  font-size: 14px;
   font-weight:500;
-  /* text-align: justify; */
+  text-align: center;
   /* border: 1px solid red; */
 }
 .fifth-part p2{
   /* text-align: center; */
   /* border: 1px solid red; */
-font-size: large;
+font-size: 30px;
+}
+.fifth-part p4{
+  font-size: 30px;
+}
+.fifth-part p5{
+  font-size: 15px;
+  /* border: 1px solid red; */
+  transform: translate(-2ch,0);
+}
+.fifth-part p6{
+  transform: translate(1ch,0);
+  font-size: 15px;
+}
+.fifth-part p7{
+  transform: translate(1ch,0);
+  font-size: 15px;
 }
 /* Decrease and make responsive the image in fifth-part-content-p8 */
 .fifth-part-content p img {
