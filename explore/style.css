@@ -1,52 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.main{
-    background-image: url(hero-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+body {
+  font-family: Arial, sans-serif;
 }
+.main {
+  background-image: url(hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color:rgb(33, 37, 41);
+  background-color: rgb(33, 37, 41);
   color: white;
   border-radius: 0 0 15px 15px;
-  position: fixed; /* Fixes the navbar at the top */
-  top: 0; /* Positions it at the top of the screen */
-  left: 0; /* Ensures it starts from the left edge */
-  width: 100%; /* Makes the navbar span the full width of the screen */
-  z-index: 1000; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  /* border: 1px solid black; */
   margin-left: 10px;
 }
 .navbar ul {
   list-style: none;
   display: flex;
-  /* border: 1px solid black; */
-  justify-content: center; /* Centers links horizontally */
-  align-items: center; /* Ensures links are vertically aligned */
-  gap: 1.0rem; /* Adds spacing between links */
-  padding: 0; /* Removes default padding */
-  margin: 0; 
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 .navbar ul li {
-  padding: 0 1rem; /* Adds space to the left and right of each link */
-}
-.navbar ul li:last-child {
-  margin-right: 2rem; /* Additional space to the right of the 'Contact' link */
+  padding: 0 1rem;
 }
 .navbar ul li a {
   color: white;
@@ -57,6 +56,7 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
+/* Mobile Menu */
 @media (max-width: 768px) {
   .navbar ul {
     display: none;
@@ -67,7 +67,6 @@
     left: 0;
     width: 100%;
     align-items: center;
-    /* border: 1px solid red; */
   }
   .navbar ul.active {
     display: flex;
@@ -75,9 +74,8 @@
   .menu-toggle {
     display: block;
     margin-right: 15px;
-    /* border: 1px solid red; */
   }
 }
-.btn{
-    margin-right: 10px;
+.btn {
+  margin-right: 10px;
 }
