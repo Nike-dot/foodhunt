@@ -113,3 +113,27 @@ button:hover span {
 button:active {
   transform: scale(0.9);
 }
+
+
+.main{
+  /* border: 5px solid red; */
+  height: 50vh;
+  background-image: url(pexels-janetrangdoan-1099680.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* ------------------------------------------------first-topic--------------------------- */
+.first-topic{
+  /* border: 5px solid blue; */
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+/* --------------------------------------------------------------------------------------------second-section---------------------------------------- */
+.second-section{
+  border: 5px solid green;
+  height: 100vh;
+}
