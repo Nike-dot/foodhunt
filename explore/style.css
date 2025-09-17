@@ -139,8 +139,9 @@ button:active {
 }
 .container{
   border: 3px solid red;
-  height: 100%;
+  
 }
 .row{
   border: 3px solid blue;
+  
 }
