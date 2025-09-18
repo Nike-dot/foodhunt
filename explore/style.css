@@ -134,14 +134,16 @@ button:active {
 }
 /* --------------------------------------------------------------------------------------------second-section---------------------------------------- */
 .second-section{
-  border: 5px solid green;
-  height: 100vh;
+  /* border: 5px solid green; */
+  height: 25vh;
 }
-.container{
-  border: 3px solid red;
-  
+@media (max-width: 768px) {
+  .second-section{
+    /* border: 5px solid green; */
+    height: 85vh;
+  }
 }
-.row{
-  border: 3px solid blue;
+.second-section .card{
+  /* border: 1px solid red; */
   
 }
