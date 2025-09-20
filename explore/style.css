@@ -146,3 +146,13 @@ button:active {
 .second-section .card{
   /* border: 1px solid red; */
 }
+
+/* ------------------------------------------------Second-topic--------------------------- */
+.Second-topic{
+  border: 5px solid blue;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
