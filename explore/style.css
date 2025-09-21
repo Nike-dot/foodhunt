@@ -134,8 +134,11 @@ button:active {
 }
 /* --------------------------------------------------------------------------------------------second-section---------------------------------------- */
 .second-section{
-  /* border: 5px solid green; */
+  border: 5px solid green;
   height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 30px 0 90px 0 ; */
 }
 @media (max-width: 768px) {
   .second-section{
@@ -145,6 +148,8 @@ button:active {
 }
 .second-section .card{
   /* border: 1px solid red; */
+  /* width: 30%;
+  height: 150px; */
 }
 
 /* ------------------------------------------------Second-topic--------------------------- */
@@ -155,4 +160,6 @@ button:active {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  margin-left: auto;
+margin-right: auto;  
 }
