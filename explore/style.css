@@ -156,7 +156,7 @@ padding-right: 5px;
 
 /* ------------------------------------------------Second-topic--------------------------- */
 .Second-topic{
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -167,6 +167,6 @@ margin-right: auto;
 }
 /* ----------------------------------------------------third-section------------------------------------------- */
 .third-section{
-  border: 5px solid red;
-  height: 50vh;
+  /* border: 5px solid red; */
+  height: auto;
 }
