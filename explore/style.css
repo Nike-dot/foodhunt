@@ -170,3 +170,12 @@ margin-right: auto;
   /* border: 5px solid red; */
   height: auto;
 }
+/* ----------------------------------------------------------------------------third-topic----------------------------------- */
+.third-topic{
+  border: 5px solid blue;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-left: auto;
