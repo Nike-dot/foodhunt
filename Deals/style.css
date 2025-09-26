@@ -116,7 +116,30 @@ button:active {
 
 /* -----------------------------------------------------------------------------first-section------------------------------------------- */
 .first-section{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: auto;
   width: 100%;
+}
+
+/* Ensure all cards in first-section have the same height */
+.first-section .card {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+
+.first-section .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  /* border:  1px solid black; */
+}
+@media (min-width: 1200px) {
+  .first-section .card {
+    height: 400px;
+  }
 }
