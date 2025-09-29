@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Login Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container" id="container">
+    <!-- Login Form -->
+    <div class="form-box login-box">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+
+    <!-- Register Form -->
+    <div class="register-box">
+      <h2>Register</h2>
+      <input type="text" placeholder="Username">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Register</button>
+    </div>
+
+    <!-- Toggle Section -->
+    <div class="toggle-box">
+      <h2>Welcome!</h2>
+      <p id="toggleText">Don't have an account? Register here.</p>
+      <button id="toggleBtn">Register</button>
+    </div>
+  </div>
+
+  <script>
+    const container = document.getElementById("container");
+    const toggleBtn = document.getElementById("toggleBtn");
+    const toggleText = document.getElementById("toggleText");
+
+    let showRegister = false;
+
+    toggleBtn.addEventListener("click", () => {
+      showRegister = !showRegister;
+      container.classList.toggle("active");
+      toggleBtn.textContent = showRegister ? "Login" : "Register";
+      toggleText.textContent = showRegister
+        ? "Already have an account? Login here."
+        : "Don't have an account? Register here.";
+    });
+  </script>
+
+</body>
+</html>
