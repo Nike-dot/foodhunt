@@ -15,11 +15,11 @@ body{
     align-items: center;
     min-height: 100vh;
     /* background: linear-gradient(90deg, #e2e2e2, #c9d6ff); */
-    background-image: url(f4.jpg);
+    background-image: url(istockphoto-467652436-2048x2048.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(1px); */
 }
 
 .container{
