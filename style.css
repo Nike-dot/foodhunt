@@ -542,13 +542,14 @@ button:active {
     grid-row: auto; /* Reset row span */
   }
 }
-/* -----------------------------------------------------fifth-part------------------------------------------ */
+/* -----------------------------------------------------footer-section------------------------------------------ */
 .footer-section {
   background: linear-gradient(135deg, #a1ffce, #faffd1);
   position: relative;
   padding-top: 150px;
   color: #222;
   overflow: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Wave */
@@ -573,37 +574,55 @@ button:active {
 /* Content Layout */
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 1rem;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Brand */
+.footer-brand {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
 .footer-brand h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
 
 .footer-brand p {
-  max-width: 300px;
+  max-width: 350px;
+  margin: 0 auto;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 /* Social */
+.footer-social {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
 .footer-social h3,
 .footer-contact h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .social-icons a {
-  margin: 0 6px;
   display: inline-block;
   transition: transform 0.3s ease;
 }
@@ -613,6 +632,11 @@ button:active {
 }
 
 /* Contact */
+.footer-contact {
+  flex: 1 1 220px;
+  text-align: center;
+}
+
 .footer-contact p {
   margin: 0.4rem 0;
   display: flex;
@@ -639,12 +663,42 @@ button:active {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .footer-content {
-    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-brand h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .footer-social h3,
+  .footer-contact h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-brand p {
+    max-width: 280px;
+    font-size: 0.9rem;
+  }
+
+  .footer-social,
+  .footer-contact {
+    width: 100%;
+  }
+
+  .footer-contact p {
+    font-size: 0.85rem;
+    flex-wrap: wrap;
   }
 }
