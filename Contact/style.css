@@ -116,10 +116,12 @@ button:active {
 
 
 
-/* ----------------------------------------------------------------------- */
-.h1{
-    height: 100vh;
-    width: 100vw;
-    font-size: 80px;
-    
+/* -----------------------------------------------------------------------first-topic-------------------------- */
+.first-topic{
+  height: 100vh;
+  font-weight: 900;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
