@@ -50,11 +50,20 @@
 
   <div class="col-md-6 mb-3" style="display: flex;flex-direction: column;justify-content: space-evenly;">
 
-    <div class="col-md-6 mb-3 py-1" style="border: 1px solid yellow;width: 100%;border-radius: 20px;background-color: white;padding-left: 20px;">
+    <div class="col-md-6 mb-3 py-1" style="width: 100%;border-radius: 20px;background-color: white;padding-left: 20px;">
     <h2>Contact Information</h2>
     <p><strong>Address:</strong> Biratnagar</p>
     <p><strong>Phone:</strong> +9779800000000</p>
     <p><strong>Email:</strong>foodhunt@gmail.com</p>
+    <div class="social-media">
+      <!-- Instagram -->
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 3c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8.5A3.5 3.5 0 1 1 8 4.5a3.5 3.5 0 0 1 0 7zm4.5-7.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            <circle cx="8" cy="8" r="2.5"/>
+          </svg>
+        </a>
+    </div>
     </div>
 
     <div class="col-md-6 mb-3" style="width: 100%;">
@@ -75,21 +84,18 @@
 
 </div>
 
-<div class="col-md-6 mb-3">
+<div class="col-md-6 mb-3" style="background-color: white;border-radius: 20px;padding-top: 40px;height: fit-content;padding-bottom:40px;">
       <form>
         <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Your Name">
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" placeholder="Your Email">
         </div>
         <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
           <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
         </div>
-        <button type="submit" class="btn btn-warning btn-outline-dark" style="font-weight: bolder;">Submit</button>
+        <button type="submit" class="btn btn-warning btn-outline-dark w-100" style="font-weight: bolder;">Submit</button>
       </form>
   </div>
 
