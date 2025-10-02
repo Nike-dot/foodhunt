@@ -69,7 +69,7 @@ body {
   }
 }
 /* -------------------------------------------------------button------------------------------------------------ */
-button {
+.but1{
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
@@ -122,10 +122,27 @@ button:active {
   height: auto;
 }
 .topic{
-  border:  1px solid red;
+  /* border:  1px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
   text-align: center;
+}
+
+/* -----------------------------------------------------------map---------------------------------------- */
+
+.map-section {
+ /* 1 border: 1px solid black; */
+  border-radius: 20px;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+}
+.map-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
