@@ -5,6 +5,7 @@
 }
 body {
   font-family: Arial, sans-serif;
+
 }
 /*--------------------------------------------------------- Navbar----------------------------------------------------------- */
 .navbar {
@@ -116,12 +117,7 @@ button:active {
 
 
 
-/* -----------------------------------------------------------------------first-topic-------------------------- */
-.first-topic{
-  height: 100vh;
-  font-weight: 900;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* -----------------------------------------------------------------------section-------------------------- */
+.first-section{
+  height: auto;
 }
