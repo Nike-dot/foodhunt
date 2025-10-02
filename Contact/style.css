@@ -146,3 +146,10 @@ button:active {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+/* --------------------------------------------------------------social-media------------------------------------------- */
+.social-media {
+  gap: 30px;
+}
+.social-media a{
+  text-decoration: none;
+}
