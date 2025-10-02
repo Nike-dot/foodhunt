@@ -121,3 +121,11 @@ button:active {
 .first-section{
   height: auto;
 }
+.topic{
+  border:  1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+}
